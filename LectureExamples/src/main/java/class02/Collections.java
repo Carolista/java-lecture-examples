@@ -1,5 +1,7 @@
 package class02;
 
+// TODO import classes as needed
+
 public class Collections {
 
     public static void main(String[] args) {
