@@ -2,7 +2,7 @@ package class02;
 
 // TODO import classes as needed
 
-public class Collections {
+public class CollectionExamples {
 
     public static void main(String[] args) {
 
