@@ -72,14 +72,14 @@ public class Book {
     // TODO: Define a method, checkOut(), with public access
     // It should change the availability and also print a statement with the title and author name
     public void checkOut() {
-        this.available = false;
+        available = false;
         System.out.println("\n" + getTitleAndAuthor() + " has been checked out of the library.");
     }
 
     // TODO: Define a method, checkIn(), with public access
     // It should change the availability and also print a statement with the title and author name
     public void checkIn() {
-        this.available = true;
+        available = true;
         System.out.println("\n" + getTitleAndAuthor() + " has been checked in.");
     }
 }
