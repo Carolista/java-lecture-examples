@@ -61,7 +61,7 @@ public class Book {
     }
 
 
-    // OTHER METHODS
+    // INSTANCE METHODS
 
     // TODO: Define a method, getTitleAndAuthor(), to return a string like "Book Title by Author Name"
     // It should have default access
