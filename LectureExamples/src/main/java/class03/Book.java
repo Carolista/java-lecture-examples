@@ -22,7 +22,7 @@ public class Book {
     // Create only a getter for available (we will have instance methods to set this)
 
 
-    // OTHER METHODS
+    // INSTANCE METHODS
 
     // TODO: Define a method, getTitleAndAuthor(), to return a string like "Book Title by Author Name"
     // It should have default access
