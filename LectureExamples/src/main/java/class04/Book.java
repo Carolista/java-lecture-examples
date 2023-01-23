@@ -75,6 +75,8 @@ public class Book {
     // OVERRIDING SPECIAL METHODS
 
     // TODO: Write a custom toString() method that nicely formats the book data
+    // Use the @Override annotation
+    @Override
     public String toString() {
         return "\n" + getTitleAndAuthor() + "\n" + numPages + " pages \nID: " + bookId;
     }

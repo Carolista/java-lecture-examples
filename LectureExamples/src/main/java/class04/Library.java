@@ -9,9 +9,11 @@ public class Library {
     final ArrayList<Book> books = new ArrayList<>();
 
     // TODO: Write a custom equals() method to compare the contents of books
+    // Use the @Override annotation
     // First include a reference check, null check, class check, and cast (see chapter 5.3.2.2)
     // Then compare the size of the books lists
     // Finally, loop through both lists and compare the books on their title & author
+    @Override
     public boolean equals(Object toBeCompared) {
 
         // Reference check
