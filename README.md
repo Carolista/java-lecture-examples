@@ -7,6 +7,8 @@ If I make updates to the original repo and you've forked and cloned it previousl
 > git fetch upstream
 ```
 
+Now you just need to merge in the changes from the upstream (original) repo locally, and then push the changes to your forked remote repo.
+
 From the `main` branch:
 
 ```
