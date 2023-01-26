@@ -30,8 +30,8 @@ public class Book {
 
     // GETTERS & SETTERS
 
-    public static String getNextIdNum() {
-        return "\nThe next available number for a book Id will be " + nextIdNum;
+    public static int getNextIdNum() {
+        return nextIdNum;
     }
 
     public String getBookId() {
@@ -96,7 +96,7 @@ public class Book {
         return id;
     }
 
-    String getTitleAndAuthor() {
+    public String getTitleAndAuthor() {
         return title + " by " + author;
     }
 
