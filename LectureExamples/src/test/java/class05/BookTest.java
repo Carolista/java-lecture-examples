@@ -79,7 +79,7 @@ public class BookTest {
     // TODO: Test the checkOut() method increases the number of times the book has been checked out
     @Test
     public void checkingOutBookIncreasesTimesCheckedOut() {
-        String spec = "book should have been checked out 1 time";
+        String spec = "timesCheckedOut is increased by one when book is checked out";
         book1.checkOut();
         int expected = 1;
         int actual = book1.getTimesCheckedOut();
@@ -89,7 +89,7 @@ public class BookTest {
     // TODO: Test the checkOut() method changes isAvailable to false
     @Test
     public void checkingOutBookMakesItUnavailable() {
-        String spec = "book should not be available after check-out";
+        String spec = "available is set to false when book is checked out";
         book1.checkOut();
         boolean condition = book1.isAvailable();
         assertFalse(spec, condition);
@@ -99,7 +99,7 @@ public class BookTest {
     // Use checkOut() first so that isAvailable will be false
     @Test
     public void bookAvailableAfterCheckIn() {
-        String spec = "book should be available after check-in";
+        String spec = "available is set to true when book is checked in";
         book2.checkOut();
         book2.checkIn();
         boolean condition = book2.isAvailable();
