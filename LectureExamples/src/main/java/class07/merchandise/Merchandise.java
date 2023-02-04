@@ -4,10 +4,11 @@ import class07.Discountable;
 import class07.Product;
 import class07.Utils;
 
+// TODO: implement Discountable interface
 public class Merchandise extends Product implements Discountable {
 
-    private String category;
-    private String theme;
+    private final String category;
+    private final String theme;
 
     public Merchandise(String name, String desc, double originalPrice, int quantity, String category, String theme) {
         super(name, desc, originalPrice, quantity);
@@ -19,16 +20,8 @@ public class Merchandise extends Product implements Discountable {
         return category;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
     public String getTheme() {
         return theme;
-    }
-
-    public void setTheme(String theme) {
-        this.theme = theme;
     }
 
     @Override
@@ -38,34 +31,36 @@ public class Merchandise extends Product implements Discountable {
                 "\nTheme: " + theme;
     }
 
+    // TODO: add methods required by Discountable interface
+
     @Override
     public void applyPercentDiscount(double percent) {
         if (percent > 1) {
             percent /= 100;
         }
-        double newPrice = getOriginalPrice() * (1 - percent);
-        setCurrentPrice(Utils.roundToPenny(newPrice));
         if (getCurrentPrice() == getOriginalPrice()) {
-            System.out.println("\nDiscount of " + percent +
+            System.out.println("\nDiscount of " + (percent * 100)  +
                     "% has been applied to product " + getId() +
                     ", " + getName());
         } else {
-            System.out.println("\nOriginal discount on " + getName() +
-                    " has been replaced with a discount of " + percent + "%.");
+            System.out.println("\nPrevious discount on " + getName() +
+                    " has been replaced with a discount of " + (percent * 100)  + "%.");
         }
+        double newPrice = getOriginalPrice() * (1 - percent);
+        setCurrentPrice(Utils.roundToPenny(newPrice));
     }
 
     @Override
     public void applyFlatDiscount(double amount) {
-        setCurrentPrice(getOriginalPrice() - amount);
         if (getCurrentPrice() == getOriginalPrice()) {
             System.out.println("\nDiscount of $" + amount +
                     " has been applied to product " + getId() +
                     ", " + getName());
         } else {
-            System.out.println("\nOriginal discount on " + getName() +
+            System.out.println("\nPrevious discount on " + getName() +
                     " has been replaced with a discount of $" + amount + ".");
         }
+        setCurrentPrice(getOriginalPrice() - amount);
     }
 
     @Override
