@@ -1,4 +1,4 @@
-package class09A;
+package class09;
 
 public class Main {
 
