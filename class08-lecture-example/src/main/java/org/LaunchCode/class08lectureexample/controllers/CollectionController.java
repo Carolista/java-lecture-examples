@@ -19,7 +19,7 @@ public class CollectionController {
     // Corresponds to http://localhost:8080/collection/styles?style=impressionism
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST}, value = "/styles")
     public String acceptQueryParamFromCollectionRoute(@RequestParam String style) {
-        System.out.println("\nRequest submitted with style value of " + style);
+        System.out.println("\n*** Request submitted with style " + style);
         return "<h3>" + style.toUpperCase() + " COLLECTION</h3>" +
                 "<p>You are now viewing works of art in the " + style + " style.</p>" +
                 "<p>Click <a href='/collection/form'>here</a> to select a different style.</p>";
