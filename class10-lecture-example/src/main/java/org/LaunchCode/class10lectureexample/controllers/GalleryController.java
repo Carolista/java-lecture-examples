@@ -9,12 +9,12 @@ public class GalleryController {
 
     // TODO: Create and use a template called index.html
     // Remember to remove @ResponseBody
+
+    // Corresponds to http://localhost:8080
     @GetMapping("/")
-    @ResponseBody
     public String getHomePageContent() {
         System.out.println("\n*** Home page content requested by browser");
-        return "<h2>Midtown Art Gallery</h2>" +
-                "<p>Welcome! View our <a href='/collection'>collection</a> of fine art.</p>";
+        return "index";
     }
 
 }
