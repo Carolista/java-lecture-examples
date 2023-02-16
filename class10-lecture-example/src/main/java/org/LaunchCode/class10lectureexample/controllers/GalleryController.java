@@ -11,19 +11,10 @@ public class GalleryController {
     // Remember to remove @ResponseBody
     // Corresponds to http://localhost:8080
     @GetMapping("/")
-    public String getHomePageContent(Model model) {
+    public String displayHomePage(Model model) {
         System.out.println("\n*** Home page content requested by browser");
         model.addAttribute("title", "Welcome");
         return "index";
     }
-
-    /*
-        Fragments:
-          - Header with link to Home & Collection
-
-        Main page - Header + greeting + large image (eventually)
-        Collection - List of artworks (eventually link to individual pages) plus link to add more
-
-     */
 
 }
