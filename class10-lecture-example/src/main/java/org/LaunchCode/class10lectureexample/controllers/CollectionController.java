@@ -1,41 +1,51 @@
 package org.LaunchCode.class10lectureexample.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 @Controller
 @RequestMapping("/collection")
 public class CollectionController {
 
+    private static final ArrayList<String> artCollection = new ArrayList<>(
+            Arrays.asList(
+                    "Girl with a Pearl Earring",
+                    "The Starry Night",
+                    "American Gothic"
+            )
+    );
+
     // TODO: Convert this to use a template, collection.html
+    // TODO: Pass list of art to template
     // Corresponds to http://localhost:8080/collection
     @GetMapping("")
-    public String getCollectionPageContent() {
+    public String displayCollectionPage(Model model) {
         System.out.println("\n*** Collection page content requested");
+        model.addAttribute("collection", artCollection);
         return "collection/index";
     }
 
-    // TODO: Convert this to use a template, styles.html
-    // Corresponds to http://localhost:8080/collection/styles?style=impressionism
-    @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST}, value = "/styles")
-    public String acceptQueryParamFromCollectionRoute(@RequestParam String style) {
-        System.out.println("\n*** Request submitted with style " + style);
-        return "styles";
-    }
-
-    // TODO: Convert this to use a template, artwork.html
-    // Corresponds to http://localhost:8080/collection/1234
-    @GetMapping("/{artworkId}")
-    public String acceptPathParamFromCollectionRoute(@PathVariable String artworkId) {
-        System.out.println("\n*** GET Request submitted for artworkId " + artworkId);
-        return "artwork";
-    }
-
-    // TODO: Convert this to use a template, form.html
+    // TODO: Convert this to use a template, add-art-form.html
     // Corresponds to http://localhost:8080/collection/form
-    @GetMapping("/form")
-    public String displayStyleForm() {
-        System.out.println("\n*** Style form submitted");
-        return "collection/form";
+    @GetMapping("/add")
+    public String displayAddArtForm() {
+        System.out.println("\n*** GET request submitted for form content");
+        return "collection/add-art-form";
+    }
+
+    // TODO: Create a POST handler for /add-art
+    // Should add name of artwork to collection list
+    // Then should redirect to /collection
+    @PostMapping("/add")
+    public String processAddArtForm(@RequestParam String artwork) {
+        System.out.println("\n*** POST request submitted to add " + artwork + " to collection");
+        artCollection.add(artwork);
+        Collections.sort(artCollection);
+        return "redirect:/collection";
     }
 }
