@@ -1,0 +1,21 @@
+id,title,details_id,artist_id,style_id,exhibit_id,on_display
+1,Mona Lisa,1,2,1,null,null
+2,Girl with a Pearl Earring,2,5,4,null,null
+3,The Starry Night,3,1,2,null,null
+4,The Kiss,4,4,7,null,null
+5,Vase with Twelve Sunflowers,5,1,2,null,null
+6,The Church at Auvers,6,1,2,null,null
+7,The Milkmaid,7,5,4,null,null
+8,The Last Supper,8,2,1,null,null
+9,Water Lilies,9,3,3,null,null
+10,The Persistence of Memory,10,8,8,null,null
+11,Seated Woman,11,6,5,null,null
+12,Luncheon of the Boating Party,12,7,3,null,null
+13,Lady with an Ermine,13,2,1,null,null
+14,The Flower Carrier,14,9,9,null,null
+15,The Scream,15,12,10,null,null
+16,The Two Fridas,16,10,11,null,null
+17,The Great Wave off Kanazawa,17,13,6,null,null
+18,Squares with Concentric Circles,18,14,10,null,null
+19,Blue Morning Glories,19,11,12,null,null
+20,"Impression, Sunrise",20,3,3,null,null
