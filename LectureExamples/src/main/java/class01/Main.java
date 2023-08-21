@@ -6,10 +6,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // TODO: Use System.out to print to the console
+        /* PRINTING TO THE CONSOLE */
+
         System.out.println("Welcome to Unit 2!");
 
-        // TODO: Declare and initialize several variables and print them to the console
+
+        /* DECLARING AND INITIALIZING VARIABLES */
+
         String newFaveShow = "Critical Role";
         String faveActor = "Laura Bailey";
         String favePC = "Jester";
@@ -39,10 +42,11 @@ public class Main {
 
         System.out.println(isEven);
 
-        // TODO: Declare and initialize a Scanner object using System.in
+
+        /* USING SCANNER TO GET USER INPUT */
+
         Scanner input = new Scanner(System.in);
 
-        // TODO: Get user input
         // Precede your input with output to the user so they know what you need
         System.out.println("Enter a whole number: ");
         // Receive the input and store it in a variable
@@ -52,27 +56,23 @@ public class Main {
 
         // Always close the Scanner object at the end of the main method
         // for efficiency and security
-        // TODO: Close Scanner
         input.close();
 
 
-        // TODO: After coding your methods, call them here
-        // Print a string with print method
-        print("Hello there!");
-        // Use both methods together to print the sum of two numbers
-        // Note: String.valueOf(someNum) will convert an int to a string since print() requires it
-        print(String.valueOf(addTwo(3, 8)));
+        /* WRITING METHODS */
 
-        System.out.println(addTwo(2, 4)); // does not require type conversion
+        System.out.println(getFullName("Matt", "Mercer")); // does not require type conversion
+
+
+        /* USING METHODS FROM OTHER CLASSES */
+
+        Examples.sayHello("Bob");
+
+        System.out.println(Examples.addThreeNums(2, 5, 9));
     }
 
-    // TODO: Code a method to print a string
-    public static void print(String str) {
-        System.out.println(str);
-    }
-
-    // TODO: Code a method to add two integers
-    public static int addTwo(int n1, int n2) {
-        return n1 + n2;
+    // Make sure this is coded outside the main method (convention is to put it below main())
+    public static String getFullName(String firstName, String lastName) {
+        return firstName + " " + lastName;
     }
 }
