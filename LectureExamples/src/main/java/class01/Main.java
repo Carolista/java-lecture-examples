@@ -43,6 +43,18 @@ public class Main {
         System.out.println(isEven);
 
 
+        /* WRITING METHODS */
+
+        System.out.println(getFullName("Matt", "Mercer")); // does not require type conversion
+
+
+        /* USING METHODS FROM OTHER CLASSES */
+
+        Examples.sayHello("Bob");
+
+        System.out.println(Examples.addThreeNums(2, 5, 9));
+
+
         /* USING SCANNER TO GET USER INPUT */
 
         Scanner input = new Scanner(System.in);
@@ -57,18 +69,6 @@ public class Main {
         // Always close the Scanner object at the end of the main method
         // for efficiency and security
         input.close();
-
-
-        /* WRITING METHODS */
-
-        System.out.println(getFullName("Matt", "Mercer")); // does not require type conversion
-
-
-        /* USING METHODS FROM OTHER CLASSES */
-
-        Examples.sayHello("Bob");
-
-        System.out.println(Examples.addThreeNums(2, 5, 9));
     }
 
     // Make sure this is coded outside the main method (convention is to put it below main())
