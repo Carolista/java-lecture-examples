@@ -6,9 +6,27 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /* PRINTING TO THE CONSOLE */
+
         // TODO: Use System.out to print to the console
 
+
+        /* DECLARING AND INITIALIZING VARIABLES */
+
         // TODO: Declare and initialize several variables and print them to the console
+
+
+        /* WRITING METHODS */
+
+        // TODO: After coding your method below main(), call it here and print the result
+
+
+        /* USING METHODS FROM OTHER CLASSES */
+
+        // TODO: Call each of the static methods from the Examples class
+
+
+        /* USING SCANNER TO GET USER INPUT */
 
         // TODO: Declare and initialize a Scanner object using System.in
 
@@ -23,17 +41,9 @@ public class Main {
         // for efficiency and security
         // TODO: Close Scanner
 
-
-        // TODO: After coding your methods, call them here
-        // Print a string with print method
-
-        // Use both methods together to print the sum of two numbers
-        // Note: String.valueOf(someNum) will convert an int to a string since print() requires it
-
     }
 
-    // TODO: Code a method to print a string
+    // TODO: Code a method to return a full name as a String using firstName and lastName
 
-    // TODO: Code a method to add two integers
 
 }
