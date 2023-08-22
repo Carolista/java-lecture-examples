@@ -45,7 +45,7 @@ public class Main {
 
         /* WRITING METHODS */
 
-        System.out.println(getFullName("Matt", "Mercer")); // does not require type conversion
+        System.out.println(getFullName("Matt", "Mercer"));
 
 
         /* USING METHODS FROM OTHER CLASSES */
