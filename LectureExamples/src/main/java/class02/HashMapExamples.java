@@ -8,8 +8,6 @@ public class HashMapExamples {
 
         /* CREATING A HASHMAP AND ADDING KEY/VALUE PAIRS */
 
-        // TODO: Declare an empty HashMap, add key/value pairs, and print the map
-
         // Create a map, itemsToPack, that can hold String keys and Integer values
         HashMap<String, Integer> elfAges = new HashMap<>();
 
@@ -24,8 +22,6 @@ public class HashMapExamples {
 
 
         /* HASHMAP METHODS */
-
-        // TODO: Practice using different methods of the HashMap class
 
         // Print the size
         System.out.println(elfAges.size());

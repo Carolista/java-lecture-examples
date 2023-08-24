@@ -9,8 +9,6 @@ public class ConditionalExamples {
 
         /* EQUALITY & LOGICAL OPERATORS */
 
-        // TODO: Print several boolean expressions using different operators with the specified types
-
         // 6 is not equal to 3 + 4
         System.out.println(6 != 3 + 4);
 
@@ -29,10 +27,7 @@ public class ConditionalExamples {
 
         /* IF, ELSE-IF, AND ELSE */
 
-        // TODO: Open a scanner for user input
         Scanner input = new Scanner(System.in);
-
-        // TODO: Store information about a noble in a map
 
         // Create a HashMap with String key and String value
         HashMap<String, String> noble = new HashMap<>();
@@ -77,8 +72,6 @@ public class ConditionalExamples {
 
         /* SWITCH STATEMENTS */
 
-        // TODO: Store information about a noble in a map
-
         // Create a HashMap with String key and String value
         HashMap<String, String> elf = new HashMap<>();
 
@@ -121,7 +114,6 @@ public class ConditionalExamples {
         // Print a sentence using the elf's name and realm
         System.out.println(elf.get("name") + " is from " + elf.get("realm"));
 
-        // TODO: Close the scanner
         input.close();
 
     }

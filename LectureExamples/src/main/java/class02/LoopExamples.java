@@ -19,7 +19,6 @@ public class LoopExamples {
                 "The Battle of the Black Gate"
         };
 
-        // TODO: Construct a basic for loop to print each battle
         for (int i=0; i < battles.length; i++) {
             System.out.println(battles[i]);
         }
@@ -27,8 +26,8 @@ public class LoopExamples {
 
         /* FOR-EACH LOOP */
 
-        // TODO: Construct a for-each loop to print each element of the Array below
         String[] words = {"YOU", "SHALL", "NOT", "PASS"};
+
         for (String word : words) {
             System.out.println(word);
         }
@@ -44,8 +43,6 @@ public class LoopExamples {
         moria.put("founder", "Durin");
         moria.put("king", "Balin");
         moria.put("monster", "a balrog");
-
-        // TODO: Construct three for-each loops for the HashMap above
 
         // Loop through keys and print each
         for (String key: moria.keySet()) {
@@ -63,8 +60,8 @@ public class LoopExamples {
 
         /* WHILE LOOP */
 
-        // TODO: Construct a while loop to print each number in the Array below as long as the value is below 100
         int[] orcs = {2, 14, 33, 57, 61, 89, 94, 106, 123, 176};
+
         int index = 0;
 
         while (orcs[index] < 100) {
@@ -75,10 +72,6 @@ public class LoopExamples {
 
         /* DO-WHILE LOOP */
 
-        // TODO: Construct a do-while loop to ask the user for book titles until they enter "QUIT"
-        // HINT: use .nextLine() instead of .next() to handle multi-word strings
-        // Unless quitting, add each title to the collection
-        // Print the collection after the loop closes
         Scanner input = new Scanner(System.in);
 
         ArrayList<String> bookTitles = new ArrayList<>();

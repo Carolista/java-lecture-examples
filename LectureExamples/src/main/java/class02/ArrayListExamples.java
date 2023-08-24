@@ -9,7 +9,6 @@ public class ArrayListExamples {
 
         /* DECLARING ARRAYLISTS */
 
-        // TODO: Declare three empty ArrayLists
         // elves, for data of type String
         // ages, for data of type Integer
         // expenses, for data of type Double
@@ -18,8 +17,6 @@ public class ArrayListExamples {
 
 
         /* ADDING ELEMENTS TO ARRAYLISTS */
-
-        // TODO: Add elements to each of arraylists above
 
         // 4 well-known elves
         elves.add("Legolas");
@@ -36,20 +33,16 @@ public class ArrayListExamples {
 
         /* PRINTING ARRAYLISTS */
 
-        // TODO: Print each arraylist
         System.out.println(elves);
         System.out.println(ages);
 
 
         /* USING ARRAYLIST & COLLECTIONS METHODS */
 
-        // TODO: Print the size of elves
         System.out.println(elves.size());
 
-        // TODO: Check to see if scores contains 2901 and print the result
         System.out.println(ages.contains(2901));
 
-        // TODO: Sort fruits and then print it
         Collections.sort(elves);
         System.out.println(elves);
 
