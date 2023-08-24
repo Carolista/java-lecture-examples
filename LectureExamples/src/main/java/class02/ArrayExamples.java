@@ -4,8 +4,6 @@ public class ArrayExamples {
 
     public static void main(String[] args) {
 
-        System.out.println("what the heck");
-
         /* DECLARING AN EMPTY ARRAY */
 
         // TODO: Declare an empty Array, hobbits, that can hold 8 elements of type String
