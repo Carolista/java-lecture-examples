@@ -6,10 +6,9 @@ public class ArrayListExamples {
 
         /* DECLARING ARRAYLISTS */
 
-        // TODO: Declare three empty ArrayLists
+        // TODO: Declare two empty ArrayLists
         // elves, for data of type String
         // ages, for data of type Integer
-        // expenses, for data of type Double
 
 
         /* ADDING ELEMENTS TO ARRAYLISTS */
@@ -30,7 +29,7 @@ public class ArrayListExamples {
 
         // TODO: Print the size of elves
 
-        // TODO: Check to see if scores contains 2901 and print the result
+        // TODO: Check to see if ages contains 2901 and print the result
 
         // TODO: Sort elves and then print it
 
