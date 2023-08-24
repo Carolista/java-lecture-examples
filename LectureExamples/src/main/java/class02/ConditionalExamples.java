@@ -43,10 +43,6 @@ public class ConditionalExamples {
         String title;
 
         // Construct a series of if/else-if/else blocks to initialize the title
-        //   Eomer becomes King of Rohan
-        //   Eowyn becomes Lady of Ithilien
-        //   Aragorn becomes King of Gondor
-
         if (nobleName.equals("Eomer")) {
             title = "King of Rohan";
         } else if (nobleName.equals("Eowyn")) {
@@ -86,10 +82,6 @@ public class ConditionalExamples {
         String realm;
 
         // Construct a switch statement to initialize the realm
-        //   Legolas is from the Woodland Realm
-        //   Elrond is from Rivendell
-        //   Galadriel is from Lothlórien
-
         switch (elfName) {
             case "Legolas":
                 realm = "the Woodland Realm";

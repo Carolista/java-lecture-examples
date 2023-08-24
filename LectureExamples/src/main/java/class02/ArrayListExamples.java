@@ -9,8 +9,6 @@ public class ArrayListExamples {
 
         /* DECLARING ARRAYLISTS */
 
-        // elves, for data of type String
-        // ages, for data of type Integer
         ArrayList<String> elves = new ArrayList<>();
         ArrayList<Integer> ages = new ArrayList<>();
 
