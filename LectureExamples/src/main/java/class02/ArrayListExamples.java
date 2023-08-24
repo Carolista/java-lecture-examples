@@ -11,7 +11,6 @@ public class ArrayListExamples {
 
         // elves, for data of type String
         // ages, for data of type Integer
-        // expenses, for data of type Double
         ArrayList<String> elves = new ArrayList<>();
         ArrayList<Integer> ages = new ArrayList<>();
 
