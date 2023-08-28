@@ -4,7 +4,7 @@ public class Book {
 
     // FIELDS
 
-    // TODO: Declare private fields title, author, available, and numPages
+    // TODO: Declare private fields title, author, numPages, and available
     // available should be initialized to true
 
 

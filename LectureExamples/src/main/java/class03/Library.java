@@ -7,7 +7,7 @@ public class Library {
     // TODO: Declare a field, books, as an ArrayList of Book objects
     // Give it private access
 
-    // Note: no constructor is required to instantiate a library object
+    // Note: the default constructor is sufficient to instantiate a library object
 
     // TODO: Define a public method, addBook()
 
