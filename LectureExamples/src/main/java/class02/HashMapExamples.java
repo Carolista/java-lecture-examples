@@ -8,7 +8,7 @@ public class HashMapExamples {
 
         /* CREATING A HASHMAP AND ADDING KEY/VALUE PAIRS */
 
-        // Create a map, itemsToPack, that can hold String keys and Integer values
+        // Create a map, elfAges, that can hold String keys and Integer values
         HashMap<String, Integer> elfAges = new HashMap<>();
 
         // Add 4 key/value pairs to it representing the elves and their ages

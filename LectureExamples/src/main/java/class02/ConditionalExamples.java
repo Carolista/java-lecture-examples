@@ -15,7 +15,7 @@ public class ConditionalExamples {
         // 8.146 is greater than or equal to 10
         System.out.println(8.146 >= 10);
 
-        // "LaunchCode" is equal to "launchcode" if case-insensitive
+        // "Gandalf" is equal to "gandalf" if case-insensitive
         System.out.println("Gandalf".toLowerCase().equals("gandalf"));
 
         // 15 is greater than 10 AND is less than or equal to 20
