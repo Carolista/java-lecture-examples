@@ -12,8 +12,8 @@ public class Book {
 
     private String title;
     private String author;
-    private boolean available = true;
     private int numPages;
+    private boolean available = true;
 
 
     // CONSTRUCTORS
@@ -28,7 +28,6 @@ public class Book {
     public Book(String title, String author) {
         this(title, author, 0);
     }
-
 
 
     // GETTERS & SETTERS
@@ -67,10 +66,11 @@ public class Book {
     }
 
 
-    // OVERRIDING SPECIAL METHODS
+    // OVERRIDE SPECIAL METHODS
 
     // TODO: Write a custom toString() method that nicely formats the book data
     // Use the @Override annotation
+
 
     // INSTANCE METHODS
 

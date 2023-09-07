@@ -5,9 +5,18 @@ import java.util.Objects;
 
 public class Library {
 
+    // FIELDS
+
     // TODO: Ensure books cannot be overwritten by another object
     // Also, make books available to package
     private ArrayList<Book> books = new ArrayList<>();
+
+
+    // OVERRIDE SPECIAL METHODS
+
+    // TODO: Write a custom toString() method to print a list of all books
+    // Use the StringBuilder class and iterate over books
+
 
     // TODO: Write a custom equals() method to compare the contents of books
     // Use the @Override annotation
@@ -15,6 +24,8 @@ public class Library {
     // Then compare the size of the books lists
     // Finally, loop through both lists and compare the books on their title & author
 
+
+    // INSTANCE METHODS
 
     public void addBook(Book book) {
         books.add(book);
