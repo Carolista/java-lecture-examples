@@ -1,7 +1,6 @@
 package class04;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Library {
 
@@ -22,7 +21,7 @@ public class Library {
     // Use the @Override annotation
     // First include a reference check, null check, class check, and cast (see chapter 5.3.2.2)
     // Then compare the size of the books lists
-    // Finally, loop through both lists and compare the books on their title & author
+    // Finally, loop through both lists and compare the books using findBook()
 
 
     // INSTANCE METHODS
