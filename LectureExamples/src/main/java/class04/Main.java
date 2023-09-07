@@ -20,6 +20,7 @@ public class Main {
 
         // TODO: Test the toString() method of the Book class by printing the first book
 
+
         Library library = new Library();
 
         library.addBook(book1);
@@ -27,6 +28,9 @@ public class Main {
         library.addBook(book3);
 
         library.printAvailableBooks();
+
+
+        // TODO: Test the toString() method of the Library class by printing the library
 
 
         // TODO: Create a second set of the same books as above
