@@ -4,15 +4,26 @@ import java.util.ArrayList;
 
 public class Library {
 
-    // TODO: Ensure books cannot be overwritten by another object
-    // Also, make books available to package
+    // FIELDS
+
     final ArrayList<Book> books = new ArrayList<>();
 
-    // TODO: Write a custom equals() method to compare the contents of books
-    // Use the @Override annotation
-    // First include a reference check, null check, class check, and cast (see chapter 5.3.2.2)
-    // Then compare the size of the books lists
-    // Finally, loop through both lists and compare the books on their title & author
+
+    // OVERRIDE SPECIAL METHODS
+
+    @Override
+    public String toString() {
+        StringBuilder allBookInfo = new StringBuilder();
+        for (Book book : books) {
+            allBookInfo.append(book.toString());
+            allBookInfo.append("\n------------------------------------\n");
+        }
+        return "\nWELCOME TO OUR LIBRARY!\n\n" +
+                "View our full collection:\n" +
+                "------------------------------------\n" +
+                allBookInfo; // automatically converted to String due to concatenation
+    }
+
     @Override
     public boolean equals(Object toBeCompared) {
 
@@ -48,6 +59,9 @@ public class Library {
         }
         return true;
     }
+
+
+    // INSTANCE METHODS
 
     public void addBook(Book book) {
         books.add(book);
