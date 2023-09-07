@@ -32,6 +32,8 @@ public class Main {
         Book book5 = new Book("Nemesis", "Isaac Asimov", 364);
         Book book6 = new Book("1984", "George Orwell");
 
+        System.out.println(library);
+
         Library library2 = new Library();
 
         library2.addBook(book4);
