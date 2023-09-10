@@ -9,8 +9,8 @@ public class Book {
     private final String bookId;
     private String title;
     private String author;
-    private boolean available = true;
     private int numPages;
+    private boolean available = true;
     private int timesCheckedOut = 0;
 
 
@@ -74,7 +74,8 @@ public class Book {
         this.timesCheckedOut = timesCheckedOut;
     }
 
-    // OVERRIDING SPECIAL METHODS
+
+    // OVERRIDE SPECIAL METHODS
 
     @Override
     public String toString() {

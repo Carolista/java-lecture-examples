@@ -4,7 +4,12 @@ import java.util.ArrayList;
 
 public class Library {
 
+    // FIELDS
+
     final ArrayList<Book> books = new ArrayList<>();
+
+
+    // OVERRIDE SPECIAL METHODS
 
     @Override
     public String toString() {
@@ -54,6 +59,9 @@ public class Library {
         }
         return true;
     }
+
+
+    // INSTANCE METHODS
 
     public void addBook(Book book) {
         books.add(book);

@@ -1,9 +1,6 @@
 package class06.beverages;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+// TODO: Add imports for JUnit 5
 
 public class SodaTest {
 

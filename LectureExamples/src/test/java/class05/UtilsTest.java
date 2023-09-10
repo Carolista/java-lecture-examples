@@ -1,12 +1,9 @@
 package class05;
 
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+// TODO: Add imports for JUnit 5
 
 public class UtilsTest {
 
     // TODO: Write a test for getInitials()
-
 
 }

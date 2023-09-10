@@ -1,9 +1,6 @@
 package class05;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+// TODO: Add imports for JUnit 5
 
 public class LibraryTest {
 
@@ -31,6 +28,5 @@ public class LibraryTest {
     // Then make copies of book1, book2, and the library (instantiate new objects with same data)
     // Add new books to new library
     // Test equals()
-
 
 }
