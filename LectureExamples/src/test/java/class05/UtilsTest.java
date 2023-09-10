@@ -1,18 +1,17 @@
 package class05;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class UtilsTest {
 
-    // TODO: Write a test for getInitials()
     @Test
     public void initialsReturnedFromFullName() {
-        String spec = "getInitials() returns initials only when given a full name";
+        String msg = "getInitials() returns only initials when given a full name";
         String expected = "GH";
         String actual = Utils.getInitials("Grace Hopper");
-        assertEquals(spec, expected, actual);
+        assertEquals(expected, actual, msg);
     }
 
 }
