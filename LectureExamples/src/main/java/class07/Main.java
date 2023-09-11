@@ -34,7 +34,6 @@ public class Main {
         //  because it is using the UsedBook implementation of toString
         System.out.println(fahrenheit451);
 
-        // TODO: Try accessing the getter for condition — you have to cast it as a UsedBook type for this to work
         // System.out.println(fahrenheit451.getCondition()); // this doesn't work!
         System.out.println(((UsedBook) fahrenheit451).getCondition());
 
@@ -45,12 +44,10 @@ public class Main {
         Apparel hpScarf = new Apparel("Harry Potter Scarf", "Join Gryffindor House! Wand not included.", 15.99, 8, "Accessories", "Harry Potter", new String[] {"OS"}, new String[] {"red", "yellow"});
         System.out.println(hpScarf);
 
-        // TODO: Apply a flat discount of $3 to the scarf and print object
         // Notice the currentPrice has changed to $12.99 as expected
         hpScarf.applyFlatDiscount(3);
         System.out.println(hpScarf);
 
-        // TODO: Apply a percent discount of 50% and print object
         // Notice the currentPrice is not 50% of $12.99 but of the original price, so $8.00
         hpScarf.applyPercentDiscount(0.5);
         System.out.println(hpScarf);
@@ -60,12 +57,10 @@ public class Main {
         UsedBook pnp = new UsedBook("Pride and Prejudice", "This timeless classic showcases Austen's wit and winsome characters", 7.99, 1, "Jane Austen", "fiction", "paperback", 284, "like new");
         System.out.println(pnp);
 
-        // TODO: Apply a flat discount of $2 to the scarf and print object
         // Notice the currentPrice is $5.99 as expected
         pnp.applyFlatDiscount(2);
         System.out.println(pnp);
 
-        // TODO: Apply another percent discount of 50% and print object
         // Notice the currentPrice is now $3.00 because the first discount is still honored
         pnp.applyPercentDiscount(0.50);
         System.out.println(pnp);

@@ -4,7 +4,6 @@ import class07.Discountable;
 import class07.Product;
 import class07.Utils;
 
-// TODO: implement Discountable interface
 public class Merchandise extends Product implements Discountable {
 
     private final String category;
@@ -30,8 +29,6 @@ public class Merchandise extends Product implements Discountable {
                 "\nCategory: " + category +
                 "\nTheme: " + theme;
     }
-
-    // TODO: add methods required by Discountable interface
 
     @Override
     public void applyPercentDiscount(double percent) {

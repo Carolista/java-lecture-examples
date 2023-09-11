@@ -1,7 +1,5 @@
 package class07.books;
 
-// TODO: implement Discountable interface
-
 import class07.Discountable;
 import class07.Utils;
 
@@ -23,8 +21,6 @@ public class UsedBook extends Book implements Discountable {
         return super.toString() +
                 "\nCondition: " + condition;
     }
-
-    // TODO: add methods required by Discountable interface
 
     @Override
     public void applyPercentDiscount(double percent) {

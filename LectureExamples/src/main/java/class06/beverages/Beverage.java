@@ -1,6 +1,5 @@
 package class06.beverages;
 
-// TODO: Convert the Beverage class to be abstract
 public abstract class Beverage {
 
     private static int nextId = 1;
@@ -18,8 +17,6 @@ public abstract class Beverage {
         nextId++;
     }
 
-    // TODO: Add getters & setters as appropriate
-    //  - modify the setter for recycled to print a confirmation to the console if true
     public int getId() {
         return id;
     }
@@ -47,7 +44,6 @@ public abstract class Beverage {
         this.recycled = recycled;
     }
 
-    // TODO: Override toString() but make it abstract so it will have to be defined in the subclasses
     @Override
     public abstract String toString();
 
