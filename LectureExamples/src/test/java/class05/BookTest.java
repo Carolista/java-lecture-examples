@@ -7,7 +7,7 @@ public class BookTest {
     // TODO: Declare (but do not initialize) two books
 
 
-    // TODO: Write a @Before method to instantiate both books
+    // TODO: Write a @BeforeEach method to instantiate both books
     // One should use the first constructor with numPages
     // The other should use the second constructor with only title and author
 

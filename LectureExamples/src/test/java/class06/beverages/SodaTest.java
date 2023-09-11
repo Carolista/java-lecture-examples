@@ -7,7 +7,7 @@ public class SodaTest {
     // TODO: Declare two objects of the Soda class (but do not initialize)
 
 
-    // TODO: Define a @Before block to instantiate the two Soda objects declared above
+    // TODO: Define a @BeforeEach method to instantiate the two Soda objects declared above
 
 
     // TODO: Use the test data above to write 3 tests confirming the inherited properties are set
