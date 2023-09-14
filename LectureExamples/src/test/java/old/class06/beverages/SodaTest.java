@@ -1,4 +1,4 @@
-package class06.beverages;
+package old.class06.beverages;
 
 // TODO: Add imports for JUnit 5
 

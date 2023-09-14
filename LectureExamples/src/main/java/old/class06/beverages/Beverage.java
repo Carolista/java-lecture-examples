@@ -1,4 +1,4 @@
-package class06.beverages;
+package old.class06.beverages;
 
 // TODO: Convert the Beverage class to be abstract
 public class Beverage {

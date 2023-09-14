@@ -1,6 +1,6 @@
-package class06.locations;
+package old.class06.locations;
 
-import class06.beverages.Beverage;
+import old.class06.beverages.Beverage;
 
 public class Refrigerator extends Storage {
 
