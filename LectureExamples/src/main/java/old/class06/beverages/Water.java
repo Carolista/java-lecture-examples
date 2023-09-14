@@ -1,4 +1,4 @@
-package class06.beverages;
+package old.class06.beverages;
 
 public class Water extends Beverage {
 

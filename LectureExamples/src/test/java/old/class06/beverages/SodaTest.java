@@ -1,5 +1,6 @@
-package class06.beverages;
+package old.class06.beverages;
 
+import old.class06.beverages.Soda;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
