@@ -87,25 +87,26 @@ public class Book {
         this.format = format;
     }
 
-    @Override
-    public String toString() {
-        return "\nPRODUCT INFORMATION:" +
-                "\nID: " + id +
-                "\nItem: " + name +
-                "\nDescription: " + desc +
-                "\nPrice: " + price +
-                "\nQuantity: " + quantity +
-                "\nAuthor: " + author +
-                "\nGenre: " + genre +
-                "\nFormat: " + format;
-    }
-
     public void increaseQuantity(int amount) {
         quantity += amount;
     }
 
     public void decreaseQuantity(int amount) {
         quantity -= amount;
+    }
+
+    @Override
+    public String toString() {
+        String newline = System.lineSeparator();
+        return "PRODUCT INFORMATION:" + newline +
+                "ID: " + id + newline +
+                "Item: " + name + newline +
+                "Description: " + desc + newline +
+                "Price: " + price + newline +
+                "Quantity: " + quantity + newline +
+                "Author: " + author + newline +
+                "Genre: " + genre + newline +
+                "Format: " + format + newline;
     }
 
     // TODO: Define describe() as required by Product

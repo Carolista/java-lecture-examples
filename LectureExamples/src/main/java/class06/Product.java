@@ -56,22 +56,23 @@ public class Product {
         return quantity;
     }
 
-    @Override
-    public String toString() {
-        return "\nPRODUCT INFORMATION:" +
-                "\nID: " + id +
-                "\nItem: " + name +
-                "\nDescription: " + desc +
-                "\nPrice: " + price +
-                "\nQuantity: " + quantity;
-    }
-
     public void increaseQuantity(int amount) {
         quantity += amount;
     }
 
     public void decreaseQuantity(int amount) {
         quantity -= amount;
+    }
+
+    @Override
+    public String toString() {
+        String newline = System.lineSeparator();
+        return "PRODUCT INFORMATION:" + newline +
+                "ID: " + id + newline +
+                "Item: " + name + newline +
+                "Description: " + desc + newline +
+                "Price: " + price + newline +
+                "Quantity: " + quantity + newline;
     }
 
     // TODO: Add an abstract method, describe()
