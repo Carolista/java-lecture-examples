@@ -9,7 +9,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // TODO: Create several objects from the non-abstract classes
         Book book1 = new Book("Pride and Prejudice", "This timeless classic showcases Austen's wit and winsome characters", 12.49, 6, "Jane Austen", "Romantic Fiction", "Paperback");
         Book book2 = new Book("The Fellowship of the Ring", "The first book of the Lord of the Rings trilogy", 18.99, 3, "JRR Tolkien", "Fantasy Fiction", "Hardcover");
         UsedBook usedBook1 = new UsedBook("Fahrenheit 451", "A masterpiece of dystopian storytelling", 6.50, 1, "Ray Bradbury", "Dystopian Fiction", "Hardcover", "Good");
@@ -19,7 +18,6 @@ public class Main {
         Apparel hat = new Apparel("Captain America Hat", "Feel like a supersoldier in this classic hat with Captain America's shield", 19.99, 5, "Hats", "Marvel", new String[]{"OS"}, new String[]{"navy", "gray"});
         Apparel tShirt = new Apparel("Batman T-shirt", "Don the classic Batman logo with this minimalist design", 24.49, 4, "T-Shirts", "DC", new String[]{"XS", "S", "M", "L", "XL"}, new String[]{"black"});
 
-        // TODO: Print each object created above
         System.out.println(book1);
         System.out.println(book2);
         System.out.println(usedBook1);
@@ -29,15 +27,12 @@ public class Main {
         System.out.println(hat);
         System.out.println(tShirt);
 
-        // TODO: Increase the quantity of an apparel object by 5, then print its new quantity
         hat.increaseQuantity(5);
         System.out.println(hat.getQuantity());
 
-        // TODO: Decrease the quantity of a drinkware object by 1, then print its new quantity
         mug.decreaseQuantity(1);
         System.out.println(mug.getQuantity());
 
-        // TODO: Describe each object created above
         System.out.println(book1.describe());
         System.out.println(book2.describe());
         System.out.println(usedBook1.describe());
