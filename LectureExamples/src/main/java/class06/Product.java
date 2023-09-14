@@ -55,6 +55,14 @@ public abstract class Product {
         return quantity;
     }
 
+    public void increaseQuantity(int amount) {
+        quantity += amount;
+    }
+
+    public void decreaseQuantity(int amount) {
+        quantity -= amount;
+    }
+
     @Override
     public String toString() {
         String newline = System.lineSeparator();
@@ -64,14 +72,6 @@ public abstract class Product {
                 "Description: " + desc + newline +
                 "Price: " + price + newline +
                 "Quantity: " + quantity + newline;
-    }
-
-    public void increaseQuantity(int amount) {
-        quantity += amount;
-    }
-
-    public void decreaseQuantity(int amount) {
-        quantity -= amount;
     }
 
     public abstract String describe();
