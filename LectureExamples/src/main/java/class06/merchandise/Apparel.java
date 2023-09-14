@@ -22,14 +22,6 @@ public class Apparel extends Merchandise {
         return colors;
     }
 
-    @Override
-    public String toString() {
-        String newline = System.lineSeparator();
-        return super.toString() +
-                "Sizes: " + String.join(", ", sizes) + newline +
-                "Colors: " + String.join(", ", colors) + newline;
-    }
-
     public void addSize(String size) {
         sizes.add(size);
     }
@@ -44,6 +36,14 @@ public class Apparel extends Merchandise {
 
     public void removeColor(String color) {
         colors.remove(color);
+    }
+
+    @Override
+    public String toString() {
+        String newline = System.lineSeparator();
+        return super.toString() +
+                "Sizes: " + String.join(", ", sizes) + newline +
+                "Colors: " + String.join(", ", colors) + newline;
     }
 
     @Override
