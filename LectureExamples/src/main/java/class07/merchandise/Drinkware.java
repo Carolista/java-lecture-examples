@@ -5,8 +5,8 @@ public class Drinkware extends Merchandise {
     private final String material;
     private final double ounces;
 
-    public Drinkware(String name, String desc, double originalPrice, int quantity, String category, String theme, String material, double ounces) {
-        super(name, desc, originalPrice, quantity, category, theme);
+    public Drinkware(String name, String desc, double price, int quantity, String category, String theme, String material, double ounces) {
+        super(name, desc, price, quantity, category, theme);
         this.material = material;
         this.ounces = ounces;
     }
@@ -21,8 +21,18 @@ public class Drinkware extends Merchandise {
 
     @Override
     public String toString() {
+        String newline = System.lineSeparator();
         return super.toString() +
-                "\nMaterial: " + material +
-                "\nOunces: " + ounces;
+                "Material: " + material + newline +
+                "Volume: " + ounces + " ounces" + newline;
+    }
+
+    @Override
+    public String describe() {
+        String newline = System.lineSeparator();
+        String pipe = " | ";
+        return ounces + "-oz. " + material + " " + getName() + newline +
+                getDesc() + newline +
+                getCategory() + pipe + getTheme() + pipe + getCurrentPrice() + newline;
     }
 }

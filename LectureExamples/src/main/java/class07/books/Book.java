@@ -7,14 +7,12 @@ public class Book extends Product {
     private String author;
     private String genre;
     private String format;
-    private int numPages;
 
-    public Book(String name, String desc, double originalPrice, int quantity, String author, String genre, String format, int numPages) {
-        super(name, desc, originalPrice, quantity);
+    public Book(String name, String desc, double price, int quantity, String author, String genre, String format) {
+        super(name, desc, price, quantity);
         this.author = author;
         this.genre = genre;
         this.format = format;
-        this.numPages = numPages;
     }
 
     public String getAuthor() {
@@ -41,20 +39,21 @@ public class Book extends Product {
         this.format = format;
     }
 
-    public int getNumPages() {
-        return numPages;
-    }
-
-    public void setNumPages(int numPages) {
-        this.numPages = numPages;
+    @Override
+    public String toString() {
+        String newline = System.lineSeparator();
+        return super.toString() +
+                "Author: " + author + newline +
+                "Genre: " + genre + newline +
+                "Format: " + format + newline;
     }
 
     @Override
-    public String toString() {
-        return super.toString() +
-                "\nAuthor: " + author +
-                "\nGenre: " + genre +
-                "\nFormat: " + format +
-                "\nNumPages: " + numPages;
+    public String describe() {
+        String newline = System.lineSeparator();
+        String pipe = " | ";
+        return getName() + " by " + author + newline +
+                getDesc() + newline +
+                genre + pipe + format + pipe + getCurrentPrice() + newline;
     }
 }

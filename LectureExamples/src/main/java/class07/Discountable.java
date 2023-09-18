@@ -7,5 +7,4 @@ public interface Discountable {
     void applyFlatDiscount(double amount);
 
     void removeDiscount();
-
 }

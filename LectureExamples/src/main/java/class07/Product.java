@@ -21,6 +21,10 @@ public abstract class Product {
         nextId++;
     }
 
+    public static int getNextId() {
+        return nextId;
+    }
+
     public int getId() {
         return id;
     }
@@ -57,23 +61,26 @@ public abstract class Product {
         return quantity;
     }
 
-    @Override
-    public String toString() {
-        return "\nPRODUCT INFORMATION:" +
-                "\nID: " + id +
-                "\nItem: " + name +
-                "\nDescription: " + desc +
-                "\nOriginal Price: " + originalPrice +
-                "\nCurrent Price: " + currentPrice +
-                "\nQuantity: " + quantity;
+    public void increaseQuantity(int amount) {
+        quantity += amount;
     }
 
-    public void updateQuantity(int amount) {
-        if (amount > 0) {
-            quantity += amount;
-        } else {
-            quantity -= amount;
-        }
+    public void decreaseQuantity(int amount) {
+        quantity -= amount;
     }
+
+    @Override
+    public String toString() {
+        String newline = System.lineSeparator();
+        return "PRODUCT INFORMATION:" + newline +
+                "ID: " + id + newline +
+                "Item: " + name + newline +
+                "Description: " + desc + newline +
+                "Original Price: " + originalPrice + newline +
+                "Current Price: " + currentPrice + newline +
+                "Quantity: " + quantity + newline;
+    }
+
+    public abstract String describe();
 
 }
