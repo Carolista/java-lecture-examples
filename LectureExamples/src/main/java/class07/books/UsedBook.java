@@ -1,13 +1,12 @@
 package class07.books;
 
-// TODO: implement Discountable interface
-
+// TODO: Implement Discountable interface
 public class UsedBook extends Book {
 
     private final String condition;
 
-    public UsedBook(String name, String desc, double originalPrice, int quantity, String author, String genre, String format, int numPages, String condition) {
-        super(name, desc, originalPrice, quantity, author, genre, format, numPages);
+    public UsedBook(String name, String desc, double price, int quantity, String author, String genre, String format, String condition) {
+        super(name, desc, price, quantity, author, genre, format);
         this.condition = condition;
     }
 
@@ -17,10 +16,17 @@ public class UsedBook extends Book {
 
     @Override
     public String toString() {
+        String newline = System.lineSeparator();
         return super.toString() +
-                "\nCondition: " + condition;
+                "Condition: " + condition + newline;
     }
 
-    // TODO: add methods required by Discountable interface
-
+    @Override
+    public String describe() {
+        String newline = System.lineSeparator();
+        String pipe = " | ";
+        return getName() + " by " + getAuthor() + newline +
+                getDesc() + newline +
+                getGenre() + pipe + getGenre() + pipe + condition + pipe + getPrice() + newline;
+    }
 }

@@ -1,5 +1,6 @@
 package class07;
 
+// TODO: Refactor to set both a final originalPrice and a currentPrice and update toString()
 public abstract class Product {
 
     private static int nextId = 1;
@@ -7,18 +8,20 @@ public abstract class Product {
     private final int id;
     private String name;
     private String desc;
-    private final double originalPrice;
-    private double currentPrice;
+    private double price;
     private int quantity;
 
     public Product(String name, String desc, double price, int quantity) {
         this.id = nextId;
         this.name = name;
         this.desc = desc;
-        this.originalPrice = price;
-        this.currentPrice = price;
+        this.price = price;
         this.quantity = quantity;
         nextId++;
+    }
+
+    public static int getNextId() {
+        return nextId;
     }
 
     public int getId() {
@@ -41,39 +44,37 @@ public abstract class Product {
         this.desc = desc;
     }
 
-    public double getOriginalPrice() {
-        return originalPrice;
+    public double getPrice() {
+        return price;
     }
 
-    public double getCurrentPrice() {
-        return currentPrice;
-    }
-
-    public void setCurrentPrice(double currentPrice) {
-        this.currentPrice = currentPrice;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public int getQuantity() {
         return quantity;
     }
 
-    @Override
-    public String toString() {
-        return "\nPRODUCT INFORMATION:" +
-                "\nID: " + id +
-                "\nItem: " + name +
-                "\nDescription: " + desc +
-                "\nOriginal Price: " + originalPrice +
-                "\nCurrent Price: " + currentPrice +
-                "\nQuantity: " + quantity;
+    public void increaseQuantity(int amount) {
+        quantity += amount;
     }
 
-    public void updateQuantity(int amount) {
-        if (amount > 0) {
-            quantity += amount;
-        } else {
-            quantity -= amount;
-        }
+    public void decreaseQuantity(int amount) {
+        quantity -= amount;
     }
+
+    @Override
+    public String toString() {
+        String newline = System.lineSeparator();
+        return "PRODUCT INFORMATION:" + newline +
+                "ID: " + id + newline +
+                "Item: " + name + newline +
+                "Description: " + desc + newline +
+                "Price: " + price + newline +
+                "Quantity: " + quantity + newline;
+    }
+
+    public abstract String describe();
 
 }

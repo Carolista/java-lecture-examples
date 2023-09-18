@@ -2,15 +2,14 @@ package class07.merchandise;
 
 import class07.Product;
 
-// TODO: implement Discountable interface
-
-public class Merchandise extends Product {
+// TODO: Implement Discountable interface
+public abstract class Merchandise extends Product {
 
     private final String category;
     private final String theme;
 
-    public Merchandise(String name, String desc, double originalPrice, int quantity, String category, String theme) {
-        super(name, desc, originalPrice, quantity);
+    public Merchandise(String name, String desc, double price, int quantity, String category, String theme) {
+        super(name, desc, price, quantity);
         this.category = category;
         this.theme = theme;
     }
@@ -25,11 +24,11 @@ public class Merchandise extends Product {
 
     @Override
     public String toString() {
+        String newline = System.lineSeparator();
         return super.toString() +
-                "\nCategory: " + category +
-                "\nTheme: " + theme;
+                "Category: " + category + newline +
+                "Theme: " + (theme.isBlank() ? "(none)" : theme) + newline;
     }
 
-    // TODO: add methods required by Discountable interface
-
+    public abstract String describe();
 }
