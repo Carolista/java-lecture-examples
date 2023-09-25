@@ -31,6 +31,7 @@ public class Main {
         return Math.sqrt(n);
     }
 
+    // TODO: Introduce a logic error in the method below and use debugging tools to find it
     public static boolean hasAVowel(String word) {
         boolean hasVowel = false;
         for (String letter : word.split("")) {
