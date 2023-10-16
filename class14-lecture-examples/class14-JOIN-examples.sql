@@ -30,7 +30,7 @@ FROM artwork
 LEFT JOIN artist ON artwork.artist = artist.full_name;
 
 -- List all artwork titles and styles and add full_name and nationality from artist table using a right inner join
-SELECT DISTINCT artwork.title, artwork.style, artist.full_name, artist.style
+SELECT DISTINCT artwork.title, artwork.style, artist.full_name, artist.nationality
 FROM artwork
 RIGHT JOIN artist ON artwork.artist = artist.full_name;
 
