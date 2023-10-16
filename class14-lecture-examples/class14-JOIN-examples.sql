@@ -1,4 +1,4 @@
--- Create a new table, artist, with an artist_id, name, and style
+-- Create a new table, artist, with an artist_id, name, and nationality
 -- Add AUTO_INCREMENT keyword for artist_id
 CREATE TABLE artist (
 	artist_id INT PRIMARY KEY AUTO_INCREMENT,
