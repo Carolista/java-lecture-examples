@@ -4,7 +4,7 @@
 -- TODO: Import records from styles.csv
 CREATE TABLE style (
 	id INT PRIMARY KEY AUTO_INCREMENT,
-    style VARCHAR(50)
+    title VARCHAR(50)
 );
 
 -- TODO: Run query to create artist table
