@@ -22,7 +22,16 @@ public class Main {
         /* CASTING WITH CLASSES */
 
         // A UsedBook object of Book type
-        Book usedBook3 = new UsedBook("Contact", "The classic novel made into a movie", 26.75, 1, "Carl Sagan", "Science Fiction", "Hardcover", "Very Good");
+        Book usedBook3 = new UsedBook(
+                "Contact",
+                "The classic novel made into a movie",
+                26.75,
+                1,
+                "Carl Sagan",
+                "Science Fiction",
+                "Hardcover",
+                "Very Good"
+        );
 
         // If you print the book you can see that it has a condition value,
         //  because it is using the UsedBook implementation of toString

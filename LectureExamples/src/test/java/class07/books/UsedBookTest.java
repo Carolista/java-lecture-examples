@@ -11,9 +11,10 @@ public class UsedBookTest {
 
     @BeforeEach
     public void createTestData() {
-        horton = new UsedBook("Horton Hears a Who", "Learn about kindness with Horton", 12.00, 4, "Dr. Seuss", "children's fiction", "hardcover", "very good");
+
     }
 
+        horton = new UsedBook("Horton Hears a Who", "Learn about kindness with Horton", 12.00, 4, "Dr. Seuss", "children's fiction", "hardcover", "very good");
     @Test
     public void canReceivePercentDiscount() {
         String msg = "a new UsedBook object can be given a percent discount through the Discountable interface";
