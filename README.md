@@ -1,5 +1,8 @@
 ## JAVA LECTURE EXAMPLES
 
+> IMPORTANT: When you fork, un-check the "main only" box to ensure you have a copy of the `solution` branch as well
+
+---
 If I make updates to the original repo and you've forked and cloned it previously, take the following steps to update your local copy with my changes:
 
 ```
