@@ -45,5 +45,4 @@ public class Main {
 
     // TODO: Code a method to return a full name as a String using firstName and lastName
 
-
 }
