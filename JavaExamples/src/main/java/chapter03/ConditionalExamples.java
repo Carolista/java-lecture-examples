@@ -49,7 +49,7 @@ public class ConditionalExamples {
 
         /* SWITCH STATEMENTS */
 
-        // TODO: Store information about a noble in a map
+        // TODO: Store information about a elf in a map
 
         // Create a HashMap with String key and String value
 

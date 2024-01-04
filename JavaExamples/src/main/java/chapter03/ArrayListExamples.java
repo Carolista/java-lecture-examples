@@ -35,6 +35,6 @@ public class ArrayListExamples {
 
 
         // And now the ages of the elves are not in the same order...
-        // We will fix this with HashMapsa
+        // We will fix this with HashMaps
     }
 }

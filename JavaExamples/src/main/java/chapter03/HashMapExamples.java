@@ -9,7 +9,7 @@ public class HashMapExamples {
 
         // TODO: Declare an empty HashMap, add key/value pairs, and print the map
 
-        // Create a map, itemsToPack, that can hold String keys and Integer values
+        // Create a map, elfAges, that can hold String keys and Integer values
 
         // Add 4 key/value pairs to it representing the elves and their ages
 
