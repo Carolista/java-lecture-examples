@@ -1,5 +1,8 @@
 ## JAVA LECTURE EXAMPLES
 
+> IMPORTANT: When you fork, un-check the "main only" box to ensure you have a copy of the `solution` branch as well
+
+---
 If you fork and clone this repo to your local machine before I have added all branches, you can set `upstream` to point to my original repo like this:
 
 ```
