@@ -1,5 +1,7 @@
 package chapter07.books;
 
+import chapter07.Common;
+
 public class UsedBook extends Book {
 
     private final String condition;
@@ -15,17 +17,14 @@ public class UsedBook extends Book {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
         return super.toString() +
-                "Condition: " + condition + newline;
+                "Condition: " + condition + Common.newline;
     }
 
     @Override
     public String describe() {
-        String newline = System.lineSeparator();
-        String pipe = " | ";
-        return getName() + " by " + getAuthor() + newline +
-                getDesc() + newline +
-                getGenre() + pipe + getGenre() + pipe + condition + pipe + getPrice() + newline;
+        return getName() + " by " + getAuthor() + Common.newline +
+                getDesc() + Common.newline +
+                getGenre() + Common.pipe + getGenre() + Common.pipe + condition + Common.pipe + getPrice() + Common.newline;
     }
 }

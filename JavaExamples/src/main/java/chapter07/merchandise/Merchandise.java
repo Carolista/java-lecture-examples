@@ -1,5 +1,6 @@
 package chapter07.merchandise;
 
+import chapter07.Common;
 import chapter07.Product;
 
 public abstract class Merchandise extends Product {
@@ -23,10 +24,9 @@ public abstract class Merchandise extends Product {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
         return super.toString() +
-                "Category: " + category + newline +
-                "Theme: " + (theme.isBlank() ? "(none)" : theme) + newline;
+                "Category: " + category + Common.newline +
+                "Theme: " + (theme.isBlank() ? "(none)" : theme) + Common.newline;
     }
 
     public abstract String describe();
