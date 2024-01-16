@@ -1,5 +1,7 @@
 package chapter07.merchandise;
 
+import chapter07.Common;
+
 // TODO: Refactor to inherit from Product
 // TODO: Make abstract for extending to subclasses
 public class Merchandise {
@@ -80,15 +82,14 @@ public class Merchandise {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
-        return "PRODUCT INFORMATION:" + newline +
-                "ID: " + id + newline +
-                "Item: " + name + newline +
-                "Description: " + desc + newline +
-                "Price: " + price + newline +
-                "Quantity: " + quantity + newline +
-                "Category: " + category + newline +
-                "Theme: " + theme + newline;
+        return "PRODUCT INFORMATION:" + Common.newline +
+                "ID: " + id + Common.newline +
+                "Item: " + name + Common.newline +
+                "Description: " + desc + Common.newline +
+                "Price: " + price + Common.newline +
+                "Quantity: " + quantity + Common.newline +
+                "Category: " + category + Common.newline +
+                "Theme: " + theme + Common.newline;
     }
 
     // TODO: Pass on abstract describe() to be defined in subclasses

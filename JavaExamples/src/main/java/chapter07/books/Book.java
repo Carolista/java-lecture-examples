@@ -1,5 +1,7 @@
 package chapter07.books;
 
+import chapter07.Common;
+
 // TODO: Refactor class to inherit from Product
 public class Book {
 
@@ -97,16 +99,15 @@ public class Book {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
-        return "PRODUCT INFORMATION:" + newline +
-                "ID: " + id + newline +
-                "Item: " + name + newline +
-                "Description: " + desc + newline +
-                "Price: " + price + newline +
-                "Quantity: " + quantity + newline +
-                "Author: " + author + newline +
-                "Genre: " + genre + newline +
-                "Format: " + format + newline;
+        return "PRODUCT INFORMATION:" + Common.newline +
+                "ID: " + id + Common.newline +
+                "Item: " + name + Common.newline +
+                "Description: " + desc + Common.newline +
+                "Price: " + price + Common.newline +
+                "Quantity: " + quantity + Common.newline +
+                "Author: " + author + Common.newline +
+                "Genre: " + genre + Common.newline +
+                "Format: " + format + Common.newline;
     }
 
     // TODO: Define describe() as required by Product
