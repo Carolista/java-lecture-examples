@@ -1,5 +1,7 @@
 package chapter08.merchandise;
 
+import chapter08.Common;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -40,20 +42,17 @@ public class Apparel extends Merchandise {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
         return super.toString() +
-                "Sizes: " + String.join(", ", sizes) + newline +
-                "Colors: " + String.join(", ", colors) + newline;
+                "Sizes: " + String.join(", ", sizes) + Common.newline +
+                "Colors: " + String.join(", ", colors) + Common.newline;
     }
 
     @Override
     public String describe() {
-        String newline = System.lineSeparator();
-        String pipe = " | ";
-        return getName() + newline +
-                getDesc() + newline +
-                "Available Sizes: " + String.join(", ", sizes) + newline +
-                "Available Colors: " + String.join(", ", colors) + newline +
-                getCategory() + pipe + getTheme() + pipe + getCurrentPrice() + newline;
+        return getName() + Common.newline +
+                getDesc() + Common.newline +
+                "Available Sizes: " + String.join(", ", sizes) + Common.newline +
+                "Available Colors: " + String.join(", ", colors) + Common.newline +
+                getCategory() + Common.pipe + getTheme() + Common.pipe + getCurrentPrice() + Common.newline;
     }
 }

@@ -59,7 +59,7 @@ public class Main {
         usedBook2.applyFlatDiscount(2);
         System.out.println(usedBook2);
 
-        usedBook2.applyPercentDiscount(0.50);
+        usedBook2.applyPercentDiscount(0.5);
         System.out.println(usedBook2);
 
     }

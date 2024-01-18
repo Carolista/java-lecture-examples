@@ -1,5 +1,6 @@
 package chapter08.books;
 
+import chapter08.Common;
 import chapter08.Product;
 
 public class Book extends Product {
@@ -41,19 +42,16 @@ public class Book extends Product {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
         return super.toString() +
-                "Author: " + author + newline +
-                "Genre: " + genre + newline +
-                "Format: " + format + newline;
+                "Author: " + author + Common.newline +
+                "Genre: " + genre + Common.newline +
+                "Format: " + format + Common.newline;
     }
 
     @Override
     public String describe() {
-        String newline = System.lineSeparator();
-        String pipe = " | ";
-        return getName() + " by " + author + newline +
-                getDesc() + newline +
-                genre + pipe + format + pipe + getCurrentPrice() + newline;
+        return getName() + " by " + author + Common.newline +
+                getDesc() + Common.newline +
+                genre + Common.pipe + format + Common.pipe + getCurrentPrice() + Common.newline;
     }
 }

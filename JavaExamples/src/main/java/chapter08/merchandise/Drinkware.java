@@ -1,5 +1,7 @@
 package chapter08.merchandise;
 
+import chapter08.Common;
+
 public class Drinkware extends Merchandise {
 
     private final String material;
@@ -21,18 +23,15 @@ public class Drinkware extends Merchandise {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
         return super.toString() +
-                "Material: " + material + newline +
-                "Volume: " + ounces + " ounces" + newline;
+                "Material: " + material + Common.newline +
+                "Volume: " + ounces + " ounces" + Common.newline;
     }
 
     @Override
     public String describe() {
-        String newline = System.lineSeparator();
-        String pipe = " | ";
-        return ounces + "-oz. " + material + " " + getName() + newline +
-                getDesc() + newline +
-                getCategory() + pipe + getTheme() + pipe + getCurrentPrice() + newline;
+        return ounces + "-oz. " + material + " " + getName() + Common.newline +
+                getDesc() + Common.newline +
+                getCategory() + Common.pipe + getTheme() + Common.pipe + getCurrentPrice() + Common.newline;
     }
 }

@@ -71,14 +71,13 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
-        return "PRODUCT INFORMATION:" + newline +
-                "ID: " + id + newline +
-                "Item: " + name + newline +
-                "Description: " + desc + newline +
-                "Original Price: " + originalPrice + newline +
-                "Current Price: " + currentPrice + newline +
-                "Quantity: " + quantity + newline;
+        return "PRODUCT INFORMATION:" + Common.newline +
+                "ID: " + id + Common.newline +
+                "Item: " + name + Common.newline +
+                "Description: " + desc + Common.newline +
+                "Original Price: " + originalPrice + Common.newline +
+                "Current Price: " + currentPrice + Common.newline +
+                "Quantity: " + quantity + Common.newline;
     }
 
     public abstract String describe();

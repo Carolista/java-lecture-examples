@@ -1,5 +1,6 @@
 package chapter08.merchandise;
 
+import chapter08.Common;
 import chapter08.Discountable;
 import chapter08.Product;
 import chapter08.Utils;
@@ -25,27 +26,25 @@ public abstract class Merchandise extends Product implements Discountable {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
         return super.toString() +
-                "Category: " + category + newline +
-                "Theme: " + (theme.isBlank() ? "(none)" : theme) + newline;
+                "Category: " + category + Common.newline +
+                "Theme: " + (theme.isBlank() ? "(none)" : theme) + Common.newline;
     }
 
     public abstract String describe();
 
     @Override
     public void applyPercentDiscount(double percent) {
-        String newline = System.lineSeparator();
         if (percent > 1) {
             percent /= 100;
         }
         if (getCurrentPrice() == getOriginalPrice()) {
             System.out.println("\nDiscount of " + (percent * 100)  +
                     "% has been applied to product " + getId() +
-                    ", " + getName() + newline);
+                    ", " + getName() + Common.newline);
         } else {
             System.out.println("\nPrevious discount on " + getName() +
-                    " has been replaced with a discount of " + (percent * 100)  + "%." + newline);
+                    " has been replaced with a discount of " + (percent * 100)  + "%." + Common.newline);
         }
         double newPrice = getOriginalPrice() * (1 - percent);
         setCurrentPrice(Utils.roundToPenny(newPrice));
@@ -53,24 +52,22 @@ public abstract class Merchandise extends Product implements Discountable {
 
     @Override
     public void applyFlatDiscount(double amount) {
-        String newline = System.lineSeparator();
         if (getCurrentPrice() == getOriginalPrice()) {
             System.out.println("\nDiscount of $" + amount +
                     " has been applied to product " + getId() +
-                    ", " + getName() + newline);
+                    ", " + getName() + Common.newline);
         } else {
             System.out.println("\nPrevious discount on " + getName() +
-                    " has been replaced with a discount of $" + amount + "." + newline);
+                    " has been replaced with a discount of $" + amount + "." + Common.newline);
         }
         setCurrentPrice(getOriginalPrice() - amount);
     }
 
     @Override
     public void removeDiscount() {
-        String newline = System.lineSeparator();
         setCurrentPrice(getOriginalPrice());
         System.out.println("Product " + getId() + ", " +
                 getName() + ", has been reset to the original price of $" +
-                getOriginalPrice() + newline);
+                getOriginalPrice() + Common.newline);
     }
 }
