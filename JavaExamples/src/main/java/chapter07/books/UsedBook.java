@@ -25,6 +25,6 @@ public class UsedBook extends Book {
     public String describe() {
         return getName() + " by " + getAuthor() + Common.newline +
                 getDesc() + Common.newline +
-                getGenre() + Common.pipe + getGenre() + Common.pipe + condition + Common.pipe + getPrice() + Common.newline;
+                getGenre() + Common.pipe + getFormat() + Common.pipe + condition + Common.pipe + getPrice() + Common.newline;
     }
 }
