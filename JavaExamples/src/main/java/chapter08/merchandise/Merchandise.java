@@ -1,5 +1,6 @@
 package chapter08.merchandise;
 
+import chapter08.Common;
 import chapter08.Product;
 
 // TODO: Implement Discountable interface
@@ -24,10 +25,9 @@ public abstract class Merchandise extends Product {
 
     @Override
     public String toString() {
-        String newline = System.lineSeparator();
         return super.toString() +
-                "Category: " + category + newline +
-                "Theme: " + (theme.isBlank() ? "(none)" : theme) + newline;
+                "Category: " + category + Common.newline +
+                "Theme: " + (theme.isBlank() ? "(none)" : theme) + Common.newline;
     }
 
     public abstract String describe();
