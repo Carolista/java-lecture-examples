@@ -25,8 +25,8 @@ public class Main {
     // TODO: Modify the method below to handle the ArrayIndexOutOfBoundsException
     // Print the default message only
     public static void printElementChars(String[] strArray, int idx) {
-        for (String character : strArray[idx]) {
-            System.out.println(character);
+        for (int i = 0; i < strArray[idx].length(); i++) {
+            System.out.println(strArray[idx].charAt(i));
         }
     }
 
