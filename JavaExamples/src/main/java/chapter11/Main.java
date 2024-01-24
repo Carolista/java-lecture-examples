@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         String[] numbersAsText = new String[] {"zero", "one", "two", "three", "four"};
-        printElement(numbersAsText, 7);
+        printElementChars(numbersAsText, 7);
 
         System.out.println("The square root of 16 is " + getSquareRoot(16));
         System.out.println("The square root of -5 is " + getSquareRoot(-5));
@@ -25,9 +25,11 @@ public class Main {
 
     }
 
-    public static void printElement(String[] strArray, int idx) {
+    public static void printElementChars(String[] strArray, int idx) {
         try {
-            System.out.println(strArray[idx]);
+            for (int i = 0; i < strArray[idx].length(); i++) {
+                System.out.println(strArray[idx].charAt(i));
+            }
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println(e.getMessage());
         }
